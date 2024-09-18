@@ -1,7 +1,7 @@
 <template>
-  <div class="container">
-    <h1 class="title">Tienda 32 Bits</h1>
-    <h2 class="subtitle">Lista de juegos</h2>
+  <div class="container mt-5">
+    <h1 class="text-center mb-4">Tienda 32 Bits</h1>
+    <h2 class="text-center mb-5">Lista de juegos</h2>
     <ListaJuegos :juegos="juegos" @update-stock="modificarStock" />
   </div>
 </template>
@@ -24,3 +24,19 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+h1 {
+  font-weight: bold;
+  color: #343a40;
+}
+
+h2 {
+  font-weight: lighter;
+  color: #6c757d;
+}
+
+.container {
+  max-width: 900px;
+}
+</style>
